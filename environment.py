@@ -18,7 +18,7 @@ print(cycle)
 
 
 def before_feature(context, feature):
-    url4 = 'http://localhost:4567/createtestcycle/ET-727/'
+    url4 = 'http://localhost:4567/createtestcycle/'
     url3 = (url4 + str(cycle) + '/' + 'Firefox')
     print(url3 + "\n")
 
@@ -62,7 +62,7 @@ def after_scenario(context, scenario):
 def after_feature(context, feature):
     print(feature.name)
     if feature.name == 'Virtual Terminal Gift':
-        url5 = 'http://localhost:4567/updatetestcyclestatus/ET-727/'
+        url5 = 'http://localhost:4567/updatetestcyclestatus/'
         url6 = (url5 + str(cycle) + "/" + 'Complete')
         print(url6 + "\n")
 
